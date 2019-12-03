@@ -5,15 +5,11 @@ but.addEventListener('click', test);
 function test(){
 
     let num = document.getElementById("numLines").value;
-    console.log(num);
 
     browser.tabs.query({currentWindow: true, active: true}, function(tabs){
 
-
     let url = tabs[0].url;
-    console.log(url);
     var data = "key=9d04304f130505f4fa89b9c9d510e397&url=" + url + "&sentences=" + num;
-    console.log(data);
     var xhr = new XMLHttpRequest();
 
     xhr.addEventListener("readystatechange", function () {
