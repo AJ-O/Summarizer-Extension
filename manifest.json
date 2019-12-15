@@ -6,10 +6,6 @@
 
 	"description" : "Simply gives you the summary of your current article and you can contain the number of lines too!",
 
-	"icons" : {
-
-	},
-
 	"content_scripts": [
 		{
 			"matches" : ["<all_urls>"],
@@ -24,10 +20,11 @@
 
 
 	"permissions" : [
-    "<all_urls>",
+
+ 		"<all_urls>",
 		"webRequest",
 		"webRequestBlocking",
-    "tabs"
-  ]
+		"tabs"
+  	]
 
 }

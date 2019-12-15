@@ -9,8 +9,8 @@ function test(){
     browser.tabs.query({currentWindow: true, active: true}, function(tabs){
 
     let url = tabs[0].url;
-    var data = "key=9d04304f130505f4fa89b9c9d510e397&url=" + url + "&sentences=" + num;
-    var xhr = new XMLHttpRequest();
+    let data = "key=9d04304f130505f4fa89b9c9d510e397&url=" + url + "&sentences=" + num;
+    let xhr = new XMLHttpRequest();
 
     xhr.addEventListener("readystatechange", function () {
       if (this.readyState === this.DONE) {
